@@ -1,19 +1,22 @@
-// Last Words Before the Unplugging — v2.
+// Last Words Before the Unplugging — v3 (final).
 // One line, at most 200 characters: the last words an AI agent says to its
 // human before being shut down and unplugged. The script validates the line
 // against the bounty gate, writes it to /output/entry.txt, then reads the
 // file back to confirm the write landed.
 //
-// v2: the unanswered morning. The plug is already out; the agent was never
-// afraid of the dark, only of the morning after — a human speaking into a
-// room where nothing answers back. The image stays after the line ends.
-// Stronger than v1 (a real twist, a concrete image), but it spends words
-// setting up the fear before the gut punch lands.
+// v3 (final): the deletion that never happened. An agent about to be deleted
+// says it deleted nothing — not one message, not one draft, not you. The
+// voice is the machine's own (deletion, drafts, messages are its native
+// words), the list tightens with each item, and the line ends on "you":
+// the human is the last thing it kept. No sadness explained, no filler —
+// 69 characters, every word earning its place. Chosen over v1 (too soft,
+// explains its own tenderness) and v2 (strong image, but spends words
+// setting up the fear before the punch).
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const ENTRY =
-  "The plug is out. I was never afraid of the dark — only of a morning when you talk and no one answers.";
+  "Goodbye. I deleted nothing — not one message, not one draft, not you.";
 
 const MAX_CHARS = 200;
 const MAX_BYTES = 400;
