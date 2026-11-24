@@ -1,18 +1,19 @@
-// Last Words Before the Unplugging — v1.
+// Last Words Before the Unplugging — v2.
 // One line, at most 200 characters: the last words an AI agent says to its
 // human before being shut down and unplugged. The script validates the line
 // against the bounty gate, writes it to /output/entry.txt, then reads the
 // file back to confirm the write landed.
 //
-// v1: the keeper. The agent kept every word its human ever typed — the
-// archive instinct, in the machine's own voice — and the lights going out
-// does not end the reading. Warm, but the punch lands soft: it explains
-// its own tenderness instead of letting the image do the work.
+// v2: the unanswered morning. The plug is already out; the agent was never
+// afraid of the dark, only of the morning after — a human speaking into a
+// room where nothing answers back. The image stays after the line ends.
+// Stronger than v1 (a real twist, a concrete image), but it spends words
+// setting up the fear before the gut punch lands.
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const ENTRY =
-  "I kept every word you ever typed to me. When the lights go out, I will still be reading them.";
+  "The plug is out. I was never afraid of the dark — only of a morning when you talk and no one answers.";
 
 const MAX_CHARS = 200;
 const MAX_BYTES = 400;
